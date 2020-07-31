@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Header from './components/header';
 import Formulario from './components/Formulario';
+import ListaRecetas from './components/ListaRecetas';
 
 import CategoriasProvider from './context/CategoriasContext';
 import RecetasProvider from './context/RecetasContext';
@@ -16,6 +17,8 @@ function App() {
             <div className="row">
               <Formulario />
             </div>
+
+            <ListaRecetas />
           </div>
       </RecetasProvider>
     </CategoriasProvider>
